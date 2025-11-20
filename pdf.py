@@ -10,14 +10,14 @@ def create_recap_from_pdfs():
     """
     # Le script est dans le dossier 'data', nous cherchons donc les PDF ici.
     script_dir = Path(__file__).parent
-    output_file = script_dir / "recapitulatif_pdfs.md"
+    output_file = script_dir / "src/recapitulatif_pdfs.md"
     
     all_md_content = []
     
     print(f"🔍 Recherche de fichiers PDF dans : {script_dir}")
 
     # Parcourir tous les fichiers dans le dossier
-    for file_path in script_dir.glob("*.pdf"):
+    for file_path in script_dir.glob("./data/*.pdf"):
         print(f"  -> Traitement du fichier : {file_path.name}")
         try:
             # Extraire le contenu du PDF en Markdown
