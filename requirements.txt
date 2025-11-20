@@ -1,0 +1,9 @@
+llama-index
+llama-index-llms-openai
+llama-index-embeddings-openai
+chainlit
+ragas
+pandas
+python-dotenv
+datasets
+chainlit
